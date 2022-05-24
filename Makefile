@@ -2,7 +2,7 @@
 
 # Step 1: make MarkdownParse.class
 MarkdownParse.class: MarkdownParse.java
-	javac MarkdownParse.java
+	javac MarkdownParse.java 
 
 # Step 2: make MarkdownParseTest.class
 MarkdownParseTest.class: MarkdownParseTest.java MarkdownParse.class
