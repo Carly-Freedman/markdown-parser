@@ -19,7 +19,7 @@ public class MarkdownParse {
                 openParen = closeBracket;
             }
             int closeParen = markdown.indexOf(")", openParen);
-            
+        
             if (closeParen == -1){
                 int nextBracket = markdown.indexOf("[", openParen);
                 
