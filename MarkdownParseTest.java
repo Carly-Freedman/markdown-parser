@@ -13,6 +13,7 @@ public class MarkdownParseTest {
     @Test
     public void test1() throws IOException
     {
+        System.out.println(MarkdownParse.getLinks(Files.readString(Paths.get("test-file1.md"))));
         assertEquals(List.of("link1"), MarkdownParse.getLinks(Files.readString(Paths.get("test-file1.md"))));
     }
 
