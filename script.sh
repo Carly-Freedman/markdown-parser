@@ -1,7 +1,9 @@
-echo "hello" > another-result.txt
+#!/bin/bash
+INDEX=1
+for file in test-files/*.md;
+do
+  java MarkdownParse2 $file
+  echo $INDEX
+  let INDEX=INDEX+1
 
-cat another-result.txt
-
-echo "overwrite existing text" > another-result.txt
-
-cat another-result.txt
+done
